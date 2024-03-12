@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .head1,.head2{
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom: 3px solid;
+    background-color: #e01e1e;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 30px;
+    
+  }
+  .head1{
+    display: flex;
+  }
+  .head2{
+    display: inline-flex;
+    margin-left: 30%;
+    
+    
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  
+  #single-bank-details .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+  }
+  #single-bank-details .container img{
+    width:400px;
+    height: auto;
+    margin:0 30px 0 20px;
+
+  }
+  #all-details{
+    margin-top: 30px;
+  }
+  .btn_container{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  button{
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #52ad9c;
+    color: white(235 8% 67% / 0.125);
+    font-size: 15px;
+    font-weight: bold;
+  }
+  button:hover{
+    cursor: pointer;
+    background: #428a7d;
+  }
+  #btn1{
+    margin-left: 350px;
+    margin-right: 50px;
+    border-radius: 30px;
+  }
+  #btn2{
+    border-radius: 30px;
+  }
+
+  /* media quaries */
+  @media(max-width:768px){
+    .head2{
+      margin-left: 12%;
+    }
+    #single-bank-details .container img{
+      width: 300px;
+    }
+    #single-bank-details .container #bank-name h2{
+      font-size: 25px;
+    } 
+    #single-bank-details .container #bank-name h4{
+      font-size: 25px;
+    }
+    #btn1{
+      margin-left: 22%;
+    }
+}
+
+@media(max-width:375px){
+  .head1{
+    font-size: 20px;
+  }
+  #single-bank-details .container{
+    flex-direction: column;
+  }
+  #all-details .container{
+   margin-left: 10px;
+  }
+}
+
+
+
+  
+  
