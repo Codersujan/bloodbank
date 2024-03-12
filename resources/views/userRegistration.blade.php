@@ -58,7 +58,7 @@
 							</div>
                             <div class="form-group">
 								<label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-								<input type="password" name="Password" id="Password"
+								<input type="password" name="pass" id="password"
 									placeholder="Password" />
 							</div>
                             <div class="form-group">

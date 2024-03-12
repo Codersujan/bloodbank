@@ -26,7 +26,8 @@ class UserController extends Controller
         $data->address = $req->address;
         $data->district = $req->district;
         $data->blood_group = $req->blood_group;
-        $data->password = $req->password;
+        $data->password = "123456";
+        // echo $req->pass;exit;
         //$data->otp="0";
         //$result = Mail::to($req->email)->send(new UserMail($req->name));
         // return view('userRegistration');

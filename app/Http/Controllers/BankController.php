@@ -43,11 +43,11 @@ class BankController extends Controller
         $result=$data->save();
         //Mail::to($request->email)->send(new SendMail);
         //if($result>0){
-            $request->Session('message','Registered');
-            return view('BankRegister');
-        //}else{
-            $request->Session('message','Sorry');
-            return view('BankRegister');
+            // $request->Session('message','Registered');
+            $data=bank::where(['bank_email'=>$request->email])->first();
+        $request->session()->put('value',$data);
+        return redirect('Dashboard');
+
         //}
         
     }
