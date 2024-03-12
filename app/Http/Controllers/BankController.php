@@ -97,7 +97,7 @@ class BankController extends Controller
     public function search(Request $req){
         if($req->isMethod("POST")){
             $search=$req->pin;
-         $data=bank_detail::where("pin","LIKE","%". $search . "%")->get();
+         $data=DB::table('banks')->where("pin","LIKE","%". $search . "%")->get();
          return view("bankShow",["data"=>$data]);
            }
     }

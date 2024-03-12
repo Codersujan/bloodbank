@@ -29,11 +29,11 @@
 			<tbody>
         @foreach($data as $item)
 				<tr>
-					<td>{{ $item->bank_id }}</td>
+					<td>{{ $item->id }}</td>
 					<td>{{ $item->bank_name }} </td>
 					<td>Private</td>
 					<td><span class="label label-success">{{ 'closed' }}</span></td>
-					<td><a href="/viewDetails{{ $item->bank_id }}" class="btn">View Details</a></td>
+					<td><a href="/viewDetails{{ $item->id }}" class="btn">View Details</a></td>
 				</tr>
         @endforeach
 			</tbody>

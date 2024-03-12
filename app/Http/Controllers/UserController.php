@@ -57,12 +57,12 @@ class UserController extends Controller
         $data->user_id = $id;
         $data->bank_id = $req->bank_id;
         $data->name = $req->name;
-        $data->email = $req->email;
+        // $data->email = $req->email;
         $data->address = $req->address;
         $data->pin = $req->pin;
         $data->ph_no = $req->ph_no;
         $data->group = $req->group;
-        $data->card = $req->card;
+        // $data->card = $req->card;
         $data->quantity = $req->quantity;
         if($price=='Yes'){
             $data->price=200;
